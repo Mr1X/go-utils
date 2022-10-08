@@ -13,7 +13,7 @@ func JSONIndent(obj interface{}) string {
 		return err.Error()
 	}
 	buf := new(bytes.Buffer)
-	err = json.Indent(buf, bs, "", "\t")
+	err = json.Indent(buf, bs, "", "	")
 	if err != nil {
 		return err.Error()
 	}
